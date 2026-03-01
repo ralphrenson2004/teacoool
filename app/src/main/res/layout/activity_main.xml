@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/logo" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Sign in or create an account"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Required field note -->
+    <TextView
+        android:id="@+id/textViewRequired"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="*indicates required field"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <!-- Username -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:drawable/edit_text"
+        android:hint="*Username or email address"
+        android:inputType="textEmailAddress"
+        android:padding="12dp" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:drawable/edit_text"
+        android:hint="*Password"
+        android:inputType="textPassword"
+        android:padding="12dp" />
+
+    <!-- Keep signed in -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Keep me signed in. Details"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- Forgot -->
+    <TextView
+        android:id="@+id/textViewForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Forgot your username or password?"
+        android:textColor="@color/green"
+        android:textSize="14sp" />
+
+    <!-- Sign in button -->
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/green"
+        android:text="Sign in"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <!-- Rewards -->
+    <TextView
+        android:id="@+id/textViewRewardsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="JOIN TEACOOL® REWARDS"
+        android:textColor="@color/green"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewRewardsDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Join TeaCool Rewards to earn complimentary food and beverages."
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <!-- Join now -->
+    <Button
+        android:id="@+id/buttonJoin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/green"
+        android:text="Join now"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>
